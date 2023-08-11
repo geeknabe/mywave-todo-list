@@ -1,0 +1,44 @@
+{
+  "env": {
+    "browser": true,
+    "jest": true
+  },
+  "plugins": ["react-redux"],
+  "parser": "@babel/eslint-parser",
+  "extends": ["airbnb", "prettier", "plugin:react/jsx-runtime","plugin:react-redux/recommended"],
+  "parserOptions": {
+    "sourceType": "module",
+    "allowImportExportEverywhere": false,
+    "ecmaFeatures": {
+      "globalReturn": false
+    },
+    "babelOptions": {
+      "configFile": "./.babelrc" 
+    } 
+  },  
+  "rules": {
+    "react/function-component-definition": "off",
+    "react/jsx-no-useless-fragment": "off",
+    "react-redux/useSelector-prefer-selectors": "off",
+    "react/no-danger": 0,
+    "react/no-array-index-key": 0,
+    "jsx-a11y/label-has-for": [
+      "error",
+      {
+        "required": {
+          "some": ["nesting", "id"]
+        }
+      }
+    ],
+    "comma-dangle": [
+      "error",
+      {
+        "functions": "never",
+        "arrays": "always-multiline",
+        "exports": "always-multiline",
+        "imports": "always-multiline",
+        "objects": "always-multiline"
+      }
+    ]
+  }
+}
