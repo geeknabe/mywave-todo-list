@@ -17,6 +17,7 @@
     } 
   },  
   "rules": {
+    "default-param-last": 0,
     "react/function-component-definition": "off",
     "react/jsx-no-useless-fragment": "off",
     "react-redux/useSelector-prefer-selectors": "off",
